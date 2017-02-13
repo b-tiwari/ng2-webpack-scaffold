@@ -5,6 +5,7 @@
   },
   "globalDependencies": {
     "jasmine": "registry:dt/jasmine#2.5.0+20170117213604",
-    "node": "registry:env/node#6.0.0+20170119204930"
+    "node": "registry:env/node#6.0.0+20170119204930",
+    "webpack-env": "registry:dt/webpack-env#1.13.0+20170105061735"
   }
 }

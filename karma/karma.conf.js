@@ -14,6 +14,7 @@ module.exports = (config) => {
             exitOnResourceError: true
         },
         preprocessors: {
+            '**/*.ts': ['typescript'],
             'karma.entry.js': ['webpack', 'sourcemap']
         },
         reporters: ['dots'],
@@ -21,6 +22,13 @@ module.exports = (config) => {
         webpack: require('../webpack/webpack.test'),
         webpackServer: {
             noInfo: true
+        },
+        typescriptPreprocessor: {
+            // transforming the filenames 
+            transformPath: function(path) {
+                return path.replace(/\.ts$/, '.js');
+            }
         }
+
     });
 }

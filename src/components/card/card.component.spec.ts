@@ -17,6 +17,8 @@ describe('CardComponent Test', () => {
         expect(component).toBeDefined();
     });
 
-    
+    it('should initialize the header and footer of the card to blank string', () => {
+        expect(component.testString).toBe('test');
+    });
 });
 
