@@ -3,14 +3,14 @@ import { Album } from './../../common/entities'
 
 @Component({
     selector: 'album',
-    template: './album.component.ts'
+    template: require('./album.component.html')
 })
 export class AlbumComponent{
         public title: string;
         public body:string;
         public footer: string;
          @Input() album: Album;
-        constructor(title: string = '', body: string, footer: string){
-            this.title = title;
+        constructor(){
+            this.title = '';
         }
 }

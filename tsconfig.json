@@ -15,7 +15,7 @@
         "suppressImplicitAnyIndexErrors": true,
         "removeComments": false,
         "declaration": false,
-       
+        "compileOnSave": false,
         "types": [
             "core-js"
         ]
